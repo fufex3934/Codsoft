@@ -1,13 +1,22 @@
-
+import {Routes,Route}  from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 function App() {
   
 
   return (
-    <>
-    <h1 class="text-3xl font-bold underline text-red-500">
-    Hello world!
-  </h1>
-    </>
+    <div>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/projects' element={<Projects/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+    </Routes>
+    </div>
   )
 }
 
