@@ -30,7 +30,8 @@ export default function Projects() {
         {
           projects.map((project,index)=>(
             <div key={index}
-            className='bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300'
+            className='bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition transform duration-300 ease-in-out hover:scale-105
+'
             >
               <h3 className='text-xl font-bold mb-2'>{project.title}</h3>
               <p className='text-gray-700 mb-4'>{project.description}</p>
