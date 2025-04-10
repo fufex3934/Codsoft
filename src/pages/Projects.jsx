@@ -17,6 +17,11 @@ export default function Projects() {
       description: "A brief description of Project 3. This project is about...",
       link: "https://github.com/fufex3934/Codsoft",
     },
+    {
+      title: "Project 4",
+      description: "A brief description of Project 4. This project is about...",
+      link: "https://github.com/fufex3934/Codsoft",
+    },
   ];
   return (
     <section className='py-10 px-4'>
