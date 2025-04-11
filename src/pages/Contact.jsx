@@ -56,7 +56,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <button type='submit' className='w-full mt-2 p-2 border border-gray-300 rounded-md'>Send Message</button>
+              <button type='submit' className='w-full mt-2 p-2 border border-gray-300 rounded-md bg-blue-600 text-white hover:bg-blue-700 cursor-pointer'>Send Message</button>
             </div>
           </form>
         </div>
