@@ -3,26 +3,47 @@ import React from 'react'
 export default function Projects() {
   const projects = [
     {
-      title: "Project 1",
-      description: "A brief description of Project 1. This project is about...",
+      title: "Online Pizza Ordering System",
+      description: "This project is a full-stack application built with React.js, Node.js, MongoDB, and TailwindCSS. It allows users to order pizzas, customize toppings, and track their orders.",
       link: "https://github.com/fufex3934/Codsoft",
     },
     {
-      title: "Project 2",
-      description: "A brief description of Project 2. This project is about...",
+      title: "Afan Oromo Spell Checker",
+      description: "A backend application that checks the spelling of Afan Oromo words using machine learning techniques. It was developed as a capstone project during my final year.",
       link: "https://github.com/fufex3934/Codsoft",
     },
     {
-      title: "Project 3",
-      description: "A brief description of Project 3. This project is about...",
+      title: "Harar Innovation Agency Website",
+      description: "A MERN stack-based website built for the Harar Innovation and Technology Agency. It features news posting, admin functionalities, and a content management system (CMS).",
       link: "https://github.com/fufex3934/Codsoft",
     },
     {
-      title: "Project 4",
-      description: "A brief description of Project 4. This project is about...",
+      title: "MERN E-commerce Application",
+      description: "This e-commerce website built with React, Express, and MongoDB allows users to browse and purchase products. It includes features like shopping cart, payment gateway integration, and order management.",
+      link: "https://github.com/fufex3934/Codsoft",
+    },
+    {
+      title: "Personal Portfolio Website",
+      description: "A personal portfolio website built with Next.js and TailwindCSS to showcase my skills, projects, and experience. It's responsive and optimized for all devices.",
+      link: "https://github.com/fufex3934/Codsoft",
+    },
+    {
+      title: "Task Management System",
+      description: "A web-based task management system for teams to organize and manage tasks. Features include task creation, assignment, deadlines, and notifications.",
+      link: "https://github.com/fufex3934/Codsoft",
+    },
+    {
+      title: "Weather App",
+      description: "A weather forecasting app built with React.js and the OpenWeatherMap API. It shows current weather conditions, forecasts, and maps based on user location.",
+      link: "https://github.com/fufex3934/Codsoft",
+    },
+    {
+      title: "Blogging Platform",
+      description: "A full-stack blogging platform where users can create, edit, and comment on blog posts. Built with Node.js, Express, MongoDB, and Handlebars for templating.",
       link: "https://github.com/fufex3934/Codsoft",
     },
   ];
+  
   return (
     <section className='py-10 px-4'>
       <h1 className='text-3xl font-semibold mb-8 text-center'>My Projects</h1>
