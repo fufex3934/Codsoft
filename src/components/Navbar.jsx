@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-
+import {X,Menu} from 'lucide-react'
 export default function Navbar() {
   const [isOpen,setIsOpen]  = useState(false);
   const toggleMenu = ()=>setIsOpen(!isOpen);
@@ -11,15 +11,37 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to={"/"} className='text-2xl font-bold'>Fufa Portifolio</Link>
 
-        {/* for Desktop */}
+        {/* for Desktop menu */}
         <div className='hidden md:flex space-x-6'>
           <NavLink to={"/"} className={navLinkClasses}>Home</NavLink>
           <NavLink to={"/projects"}className={navLinkClasses}>Projects</NavLink>
           <NavLink to={"/about"} className={navLinkClasses}>About</NavLink>
           <NavLink to={"/contact"} className={navLinkClasses}>Contact</NavLink>
         </div>
+
+        {/* Hamburger Button */}
+        <button 
+        className='md:hidden'
+        onClick={toggleMenu}
+        aria-label='Toggle Menu'
+        >{isOpen ? <X size={28}/>:<Menu size={28}/>}</button>
         
       </div>
+     {/* Mobile Menu */}
+     {
+      isOpen &&(
+        <div className='md:hidden bg-gray-800 px-4 pb-4'>
+      <div className='flex flex-col space-y-4'>
+        <NavLink to={"/"} className={navLinkClasses} onClick={()=>setIsOpen(false)}>Home</NavLink>
+        <NavLink to={"/projects"} className={navLinkClasses} onClick={()=>setIsOpen(false)}>Projects</NavLink>
+        <NavLink to={"/about"} className={navLinkClasses} onClick={()=>setIsOpen(false)}>About</NavLink>
+        <NavLink to={"/contact"} className={navLinkClasses} onClick={()=>setIsOpen(false)}>Contact</NavLink>
+        
+
+      </div>
+     </div>
+      )
+     }
     </nav>
   )
 }
